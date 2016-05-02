@@ -1,5 +1,11 @@
 $(document).ready(function(){
 	$(window).bind('scroll',function(e){});
+	$('a.navbar-brand').click(function(){
+
+		$('html,body').animate({scrollTop:0}, 1000);
+		return false;
+
+	});
 	$('a.home').click(function(){
 
 		$('html,body').animate({scrollTop:0}, 1000);
